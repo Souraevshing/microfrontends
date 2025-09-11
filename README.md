@@ -1,6 +1,8 @@
 # Micro Frontends for beginners to advanced guide to development
 
 ## Structure of multiple micro frontend apps
+
+```
 |--- cart
     |--- src
     |--- public
@@ -25,3 +27,4 @@
     |--- package.json
     |--- package-lock.json
     |--- webpack.config.js
+```
