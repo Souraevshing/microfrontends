@@ -50,12 +50,13 @@
         justify-content: space-between;
         gap: 12px;
         margin-bottom: 20px;
+        cursor: pointer;
       }
       header h1 {
         font-size: 22px;
         font-weight: 700;
         margin: 0;
-        letter-spacing: 0.3px;
+        letter-spacing: 2px;
       }
       header .badge {
         font-size: 12px;
@@ -110,19 +111,28 @@
       a:hover {
         text-decoration: underline;
       }
+      header .dev {
+        border: 1px solid green;
+        background-color: green;
+        color: white;
+        font-size: medium;
+      }
+      header .underline {
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>MicroFrontend</h1>
-        <span class="badge">Module Federation • dev</span>
+        <h1 onclick="document.location.href='/'" class="underline">MicroFrontend</h1>
+        <span class="badge dev">Module Federation • dev</span>
       </header>
 
       <div class="grid">
         <section class="panel">
           <div class="panel-header">
-            <h2 class="panel-title">Products Remote (3000)</h2>
+            <h2 class="panel-title">Products Remote (8081)</h2>
             <span class="hint">exposes <code>./ProductsIndex</code></span>
           </div>
           <div class="panel-body">
@@ -132,7 +142,7 @@
 
         <section class="panel">
           <div class="panel-header">
-            <h2 class="panel-title">Cart Remote (3002)</h2>
+            <h2 class="panel-title">Cart Remote (8082)</h2>
             <span class="hint">exposes <code>./CartShow</code></span>
           </div>
           <div class="panel-body">
