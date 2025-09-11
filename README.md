@@ -3,7 +3,7 @@
 ## Structure of multiple micro frontend apps
 
 ```
-|--- cart
+cart/
     |--- src
     |--- public
     |--- .prettierrc
@@ -11,7 +11,7 @@
     |--- package.json
     |--- package-lock.json
     |--- webpack.config.js
-|--- container
+container/
     |--- src
     |--- public
     |--- .prettierrc
@@ -19,7 +19,7 @@
     |--- package.json
     |--- package-lock.json
     |--- webpack.config.js
-|--- products
+products/
     |--- src
     |--- public
     |--- .prettierrc
