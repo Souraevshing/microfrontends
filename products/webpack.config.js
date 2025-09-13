@@ -5,15 +5,18 @@ module.exports = {
   mode: 'development',
   devServer: {
     port: 8081,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
   },
   plugins: [
     new ModuleFederationPlugin({
       name: 'products',
       filename: 'remoteEntry.js',
       exposes: {
-        './ProductsIndex': './src/index',
+        './ProductsIndex': './src/bootstrap',
       },
-      shared: ['faker']
+      shared: ['faker'],
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
