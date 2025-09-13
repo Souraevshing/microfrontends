@@ -4,4 +4,4 @@ import { mount as mountCart } from "cart/CartShow";
 console.log("container!");
 
 mountProducts(document.querySelector("#my-products"));
-mountCart(document.querySelector("#cart-dev"));
+mountCart(document.querySelector("#my-cart"));
